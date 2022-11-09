@@ -1,0 +1,624 @@
+/*Geral*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  box-shadow: 0 5px 10px rgb(26, 26, 26);
+  padding: 5px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+
+}
+
+header .navbar ul {
+  list-style: none;
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+header .navbar ul li a {
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+  display: block;
+}
+
+header .navbar ul li a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 250px;
+  background-color: black;
+  display: none;
+  border-radius: 10px;
+}
+
+header .navbar ul li ul li {
+  width: 100%;
+  text-align: center;
+}
+
+header .navbar ul li:hover>ul {
+  display: initial;
+}
+
+#menu-bar {
+  display: none;
+}
+
+header label {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+
+@media screen and (max-width: 534px) {
+  .logo {
+    height: 80px;
+    width: auto;
+
+  }
+
+
+}
+
+@media screen and (max-width: 920px) {
+
+  header {
+    padding: 20px;
+    height: auto;
+  }
+
+  header label {
+    display: initial;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: black;
+    border-top: 1px solid white;
+    display: none;
+
+  }
+
+  header .navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+
+  header .navbar ul li ul li {
+    background-color: rgb(29, 29, 29);
+  }
+
+  #menu-bar:checked~.navbar {
+    display: initial;
+  }
+}
+
+.cor1 {
+
+  background-image: linear-gradient(to bottom, black, white);
+  padding-top: 40px;
+}
+
+.container {
+  background-image: linear-gradient(to bottom, rgb(255, 153, 80), rgb(255, 206, 101));
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.fundo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.imgFundo {}
+
+/**/
+
+.imgCurriculo {
+  height: auto;
+  width: 400px;
+  padding: 40px 10px;
+}
+
+.conteudoCurriculo {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.btnCriar {
+  height: 40px;
+  width: 25%;
+  background: rgb(255, 138, 96);
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 20px;
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.btnCriar:hover {
+  background: rgb(241, 129, 0);
+  color: white;
+  border-color: white;
+}
+
+.botao {
+  text-align: center;
+
+}
+
+@media screen and (max-width: 917px) {
+  .fundo {
+    flex-direction: column;
+  }
+}
+
+
+/**/
+@media screen and (max-width: 1510px) {
+  .imgCurriculo {
+    height: auto;
+    width: 350px;
+    padding: 40px 10px;
+  }
+
+}
+
+@media screen and (max-width: 1324px) {
+  .imgCurriculo {
+    height: auto;
+    width: 300px;
+    padding: 40px 10px;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  .imgCurriculo {
+    height: auto;
+    width: 250px;
+    padding: 40px 8px;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .imgCurriculo {
+    height: auto;
+    width: 200px;
+    padding: 40px 5px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .conteudoCurriculo {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .imgCurriculo {
+    height: auto;
+    width: 150px;
+    padding: 40px 10px;
+  }
+
+
+}
+
+.cor2 {
+  background-color: white;
+}
+
+.container2 {
+
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.imgDicas {
+  width: 100px;
+  height: auto;
+}
+
+
+.dicas {
+  display: flex;
+
+}
+
+.abc {
+  padding: 20px;
+  width: 30%;
+}
+
+
+
+@media screen and (max-width: 967px) {
+  .imgDicas {
+    width: 80px;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 690px) {
+  .imgDicas {
+    width: 80px;
+    height: auto;
+  }
+
+  .abc {
+
+    padding: 10px;
+    width: 20%;
+    align-items: center;
+
+  }
+
+  .dicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.container3 {
+
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 80px;
+
+}
+
+.informacoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imgInfo {
+  width: 400px;
+  height: auto;
+  margin-right: 120px;
+
+}
+
+.cor3 {
+  background-image: linear-gradient(to top, black, white);
+}
+
+@media screen and (max-width: 1185px) {
+  .container3 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+}
+
+@media screen and (max-width: 881px) {
+  .container3 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .informacoes {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  .imgInfo {
+    width: 300px;
+    height: auto;
+    margin-right: 120px;
+  
+  }
+
+}
+
+/*Rodape*/
+footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  margin: 0;
+  background: black;
+  height: auto;
+
+}
+
+
+
+.main-content {
+  display: flex;
+}
+
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+  color: white;
+}
+
+.box h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box .content {
+  margin: 20px 0 0 0;
+  position: relative;
+  color: white
+}
+
+.box .content:after {
+  position: absolute;
+  content: "";
+  width: 15%;
+  height: 2px;
+  background: white;
+  top: -10px;
+}
+
+.box .content:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+  top: -10px;
+}
+
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+  padding: 0 2px;
+}
+
+.socialMidia {
+  color: white;
+}
+
+.left .content .social a span {
+  width: 40px;
+  height: 40px;
+  background: #1a1a1a;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.left .content .social a span:hover {
+  background: grey;
+}
+
+.left .content p {
+  text-align: justify;
+}
+
+.center .content .fas {
+  font-size: 23px;
+  background: #1a1a1a;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.center .content .fas:hover {
+  background: grey;
+}
+
+.center .content .text {
+  font-size: 17px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.center .content .phone {
+  margin: 10px 0;
+}
+
+.center .content .msg {
+  margin-top: 10px;
+}
+
+.right form input,
+.right form textarea {
+  width: 100%;
+  font-size: 17px;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+  color: white;
+}
+
+.right form input {
+  height: 35px;
+}
+
+.right form input:focus,
+.right form textarea:focus {
+  outline-color: #656565;
+}
+
+.right form .text {
+  font-size: 17px;
+  margin-bottom: 2px;
+  color: white;
+}
+
+.right form .btn {
+  margin-top: 10px;
+}
+
+.right form .btn .botaoRodape {
+  height: 40px;
+  width: 100%;
+  background: rgb(255, 138, 96);
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.right form .btn button:hover {
+  background: rgb(241, 129, 0);
+  color: white;
+  border-color: white;
+}
+
+.bottom .center {
+  padding: 5px;
+  font-size: 15px;
+  background: black;
+  text-align: center;
+}
+
+.bottom .center span {
+  color: #aca3a3;
+}
+
+.bottom .center a {
+  color: rgba(23, 131, 231, 0.616);
+  text-decoration: none;
+}
+
+.bottom .center a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*Conteudo MObile*/
+
+@media screen and (max-width: 920px) {
+  footer {
+
+
+    bottom: 0px;
+  }
+
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .main-content .box {
+    margin: 5px 0;
+  }
+}
+
+.branco {
+  color: white;
+}
+
+.vidro {
+  background-color: rgb(255, 153, 80);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+}
+
+/*fontes*/
+
+.menu {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.titulo {
+  padding-bottom: 35px;
+  font-size: 20px;
+  font-family: 'Noto Sans Display', sans-serif;
+  text-align: center;
+
+}
+
+.paragrafo {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+}
+
+
+.subir {
+ float: right 10%;
+  cursor: pointer;
+
+
+}
+
+.jogo {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.692);
+  border: none;
+}
